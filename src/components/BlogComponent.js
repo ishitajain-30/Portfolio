@@ -76,10 +76,11 @@ const Item = {
 };
 
 const BlogComponent = (props) => {
-  const { name, tags, date, imgSrc, link } = props.blog;
+  const { heading, name, tags, date, imgSrc, link } = props.blog;
   return (
     <Container variants={Item}>
       <Box target="_blank" href={`${link}`}>
+        <Title>{heading}</Title>
         <Image img={imgSrc} />
         <Title>{name}</Title>
         <HashTags>
