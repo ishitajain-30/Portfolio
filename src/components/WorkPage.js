@@ -15,7 +15,7 @@ import Navigation from "./Navigation";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
-  height: 150vh;
+  height: 120vh;
   position: relative;
   display: flex;
   align-items: center;

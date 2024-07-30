@@ -76,7 +76,7 @@ const SocialIcons = (props) => {
         </a>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.4 }}
@@ -92,9 +92,9 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
-      </motion.div>
+      </motion.div> */}
 
-      {/* <motion.div
+      <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
@@ -102,7 +102,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://youtube.com"}
+          href={"https://leetcode.com/u/ishitajain30/"}
         >
           <Leetcode
             width={25}
@@ -110,7 +110,7 @@ const SocialIcons = (props) => {
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
-      </motion.div> */}
+      </motion.div>
 
       <Line
         color={props.theme}
