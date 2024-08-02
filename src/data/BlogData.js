@@ -19,7 +19,7 @@ export const Blogs = [
     tags: ["reactjs", "python", "mongoDB", "styled-components"],
     // date: "6 July, 2021",
     imgSrc: slotSavant,
-    link: "https://github.com/ShreedharJoshi31/slot-savant.git",
+    link: "https://github.com/ishitajain-30/Slot-Savant",
   },
   {
     id: 3,
