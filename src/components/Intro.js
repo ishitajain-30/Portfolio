@@ -76,7 +76,14 @@ const Intro = () => {
           <h1>Hi,</h1>
           <h3>I'm Ishita Jain</h3>
           <h6>I develop Full stack Web Applications and practice DevOps.</h6>
-          <a href="">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1_JGMa9HNpD2sR2uINawLCI1TODp-rXUN/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white" }}
+          >
+            Resume
+          </a>
         </Text>
       </SubBox>
       <SubBox>

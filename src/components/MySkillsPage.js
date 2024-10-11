@@ -78,6 +78,21 @@ const Description = styled.div`
   }
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+`;
+
 const MySkillsPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
@@ -87,42 +102,43 @@ const MySkillsPage = () => {
         <PowerButton />
         <ParticleComponent theme="light" />
 
-        <Main>
-          <Title>
-            <Develope width={40} height={40} /> Full Stack Developer
-          </Title>
-          <Description>
-            Love to build dynamic and scalable web applications using modern
-            front-end and back-end technologies.
-          </Description>
+        <Wrapper>
+          <Main>
+            <Title>
+              <Develope width={40} height={40} /> Full Stack Developer
+            </Title>
+            <Description>
+              Love to build dynamic and scalable web applications using modern
+              front-end and back-end technologies.
+            </Description>
 
-          <Description>
-            <strong>Technologies</strong>
-            <p>
-              Html, Css, Js, React, Redux, Typescript,Node, Express, Tailwind,
-              MongoDB, MySQL, PHP, Postman, etc.
-            </p>
-          </Description>
-        </Main>
+            <Description>
+              <strong>Technologies</strong>
+              <p>
+                Html, Css, Js, React, Redux, Typescript,Node, Express, Tailwind,
+                MongoDB, MySQL, PHP, Postman, etc.
+              </p>
+            </Description>
+          </Main>
 
-        <Main>
-          <Title>
-            <CLoud width={40} height={40} /> Devops Engineer
-          </Title>
-          <Description>
-            Believe in automating deployment pipelines, managing infrastructure
-            with IaC, and ensuring seamless CI/CD processes
-          </Description>
+          <Main>
+            <Title>
+              <CLoud width={40} height={40} /> Devops Engineer
+            </Title>
+            <Description>
+              Believe in automating deployment pipelines, managing
+              infrastructure with IaC, and ensuring seamless CI/CD processes
+            </Description>
 
-          <Description>
-            <strong>Services</strong>
-            <p>AWS, Docker, Jenkins, Kubernetes,GCP, Shell Scripting, etc.</p>
-          </Description>
-        </Main>
-
-        <BigTitle text="SKILLS" top="80%" right="30%" />
-        <Navigation />
+            <Description>
+              <strong>Services</strong>
+              <p>AWS, Docker, Jenkins, Kubernetes,GCP, Shell Scripting, etc.</p>
+            </Description>
+          </Main>
+        </Wrapper>
       </Box>
+      <BigTitle text="PROJECTS" top="5rem" left="5rem" />
+      <Navigation />
     </ThemeProvider>
   );
 };
