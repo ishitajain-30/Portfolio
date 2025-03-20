@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Github } from "../components/AllSvgs";
 
 const Box = styled(motion.li)`
   width: 16rem;
@@ -52,29 +50,29 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Link = styled.a`
-  background-color: ${(props) => props.theme.body};
-  color: ${(props) => props.theme.text};
-  text-decoration: none;
-  padding: 0.5rem calc(2rem + 2vw);
-  border-radius: 0 0 0 50px;
-  font-size: calc(1em + 0.5vw);
+// const Link = styled.a`
+//   background-color: ${(props) => props.theme.body};
+//   color: ${(props) => props.theme.text};
+//   text-decoration: none;
+//   padding: 0.5rem calc(2rem + 2vw);
+//   border-radius: 0 0 0 50px;
+//   font-size: calc(1em + 0.5vw);
 
-  ${Box}:hover & {
-    background-color: ${(props) => props.theme.text};
-    color: ${(props) => props.theme.body};
-  }
-`;
+//   ${Box}:hover & {
+//     background-color: ${(props) => props.theme.text};
+//     color: ${(props) => props.theme.body};
+//   }
+// `;
 
-const Git = styled.a`
-  color: inherit;
-  text-decoration: none;
-  ${Box}:hover & {
-    & > * {
-      fill: ${(props) => props.theme.text};
-    }
-  }
-`;
+// const Git = styled.a`
+//   color: inherit;
+//   text-decoration: none;
+//   ${Box}:hover & {
+//     & > * {
+//       fill: ${(props) => props.theme.text};
+//     }
+//   }
+// `;
 
 // Framer motion configuration
 const Item = {
